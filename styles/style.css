@@ -71,7 +71,7 @@ ul.nav li ul {
 	display: none;
 	position: absolute;
 	width: auto;
-	top: 47px;
+	top: 45px;
 }
 
 ul.nav li:hover ul {
@@ -117,7 +117,7 @@ header {
 	width: 100%;
 	background-image: url(../media/stronglifts.jpg);
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 	position: relative;
 }
 
@@ -180,6 +180,8 @@ header h1 {
 ****************************************************/
 
 
+footer {
 
+}
 
 
