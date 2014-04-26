@@ -8,13 +8,11 @@ body {
 	margin: 0;
 	padding: 0;
     font-family: 'Source Sans Pro', 'sans-serif';
-
 }
 
 p {
 	font-size: 18px;
 	font-weight: 300;
-	/*letter-spacing: 1px;*/
 	line-height: 25px;
 }
 
@@ -31,84 +29,81 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
+	padding-top: 5px;
 	z-index: 99;
 	width: 100%;
-	padding-top: 5px;
 	background-color: #e74c3c;
+	box-shadow: 0 45px 5px black;
+}
+
+ul.nav, ul.sub-nav {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style-type: none; 
+	width: 100%;
+	background-color: black;
+}
+
+ul.nav {
+	position: fixed;
+	width: 100%;
+}
+
+ul.nav li {
+	display: inline;
+	position: relative;
+	float: left;
+}
+
+ul.nav li a {
+	padding: 10px;
+	float: left;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;	
+}
+
+ul.nav li:first-child a {
+} 
+
+ul.nav li ul {
+	display: none;
+	position: absolute;
+	width: auto;
+	top: 47px;
+}
+
+ul.nav li:hover ul {
+	display:block;
+}
+
+ul.nav li ul li {
+	display: list-item;
+	float: none;
+}
+
+ul.nav li ul li a {
+	text-align: center;
+	width: auto;
+}
+
+/*ensure Squat & deadlift span entire length*/
+ul.nav li ul li:first-child a,
+ul.nav li ul li:nth-child(2) a {
+	width: 100%;
 }
 
 nav a {
 	color: white;
 }
 
-nav ul,
-nav .sub-nav {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	background-color: black;
-	float: left;
-	list-style-type: none;
-	width: 100%;
-	position: relative;
-}
-
-nav ul li {
-	display: inline;
-	position: relative;
-	float: left;
-}
-
-
-nav ul li a {
-	float: left;
-	/*r*/
-	height: 40px;
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 1px;
-
-}
-
-/*5x5 home icon*/
-nav ul li:first-child a {
-	font-size: 25px;
-	font-weight: 800;
-	/*padding: 25px;*/
-}
-
-nav ul li:nth-child(2) a {
-	width: 15%;
-}
-
-/*WHEN ORIGINAL NAV HOVERED*/
-nav ul li:hover a {
-	background-color: #e74c3c;
+nav a:hover {
 	color: black;
-}
-
-/*DISPLAY DROPDOWN LIST;*/
-nav ul li:hover ul {
-	display: block;
-}
-
-/*DROPDOWN LIST*/
-nav ul li ul {
-	position: absolute;
-	top: 100px;
-	display: list-item;
-	float: none;
 	background-color: #e74c3c;
-	display: none;
 }
 
-nav ul li ul li:first-child a{
-	/*padding: 10px;*/
-}
 
-nav ul li ul a {
-	display: block;
-}
 
 span.arrow {
 	font-size:10px;
@@ -122,17 +117,61 @@ header {
 	width: 100%;
 	background-image: url(../media/stronglifts.jpg);
 	background-size: cover;
+	background-position: bottom;
+	position: relative;
+}
+
+header h1 {
+	text-align: center;
+	padding: 5%;
+	margin: 0 15%;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	background-color: rgba(255,255,255,0.5);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	
 }
 
 /***************************************************
 ************     CONTENT      **********************
 ****************************************************/
 .content {
-	margin: 50px 25% 50px 15%;
 	float: left;
-	width: 80%;
-	max-width: 525px;
+	width: 60%;
+	padding: 25px 0 25px 10%;
+	/*border: 1px solid black;*/
+	
+}
 
+.wrapper {
+	max-width: 525px;
+	/*border: 1px solid black;*/
+}
+
+/***************************************************
+************     SIDEBAR      **********************
+****************************************************/
+
+.sidebar {
+	float: right;
+	width: 40%;
+	/*border: 1px solid black;*/
+	padding: 25px;
+}
+
+.mustread,
+.tools,
+.tweets {
+	/*border: 1px solid black;*/
+	margin: 50px 0 50px 0;
+}
+
+.tools {
+	
+}
+
+.tweets{
 }
 
 
