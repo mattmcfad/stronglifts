@@ -18,6 +18,23 @@ body {
     font-family: 'Source Sans Pro', 'sans-serif';
 }
 
+h1 {
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	padding: 5% 0;
+	margin: 0 15%;
+	background-color: rgba(255,255,255,0.5);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	box-shadow:  0 5px 5px rgba(0,0,0,0.7);
+	
+}
+
+.headers{ 
+	padding-top: 60px;
+	margin-top: 0;
+}
+
 p {
 	font-size: 18px;
 	font-weight: 300;
@@ -143,23 +160,8 @@ header {
 	background-image: url(../media/stronglifts.jpg);
 	background-size: cover;
 	background-position: top;
-	position: relative;
-}
-
-header h1 {
-	text-align: center;
-	color: black;
-	font-size: 40px;
-	padding: 5% 10%;
-	margin: 0 20%;
-	min-width: 50%;
-	position: absolute;
-	top: 30%;
-	left: 2%;
-	background-color: rgba(255,255,255,0.5);
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-	box-shadow:  0 5px 5px rgba(0,0,0,0.7);
-	
+	/*position: relative;*/
+	padding-top: 17%;
 }
 
 /***************************************************
@@ -173,16 +175,22 @@ header h1 {
 	
 }
 
+.content li,
+.content-other li {
+	font-weight: 300;
+	padding: 2px 0;
+}
+
 .wrapper {
-	max-width: 525px;
+	max-width: 555px;
 	/*border: 1px solid black;*/
 }
 
-.content th {
+th {
 	text-decoration: underline;
 }
 
-.content td {
+td {
 	text-align: center;
 	padding: 5px 10px;
 }
@@ -314,5 +322,20 @@ footer {
 	color: #e74c3c;
 	font-family: 'CAC_Champagne';
 	/*font-family: 'Pacifico', 'cursive';*/
+}
+
+/***************************************************
+*****    CONTENT WRAPPER FOR OTHER PAGES    ********
+****************************************************/
+
+
+.wrapper-other {
+	/*width: 60%;*/
+	padding: 0 20%;
+}
+.content-other {
+	max-width: 555px;
+	/*margin: 50px 15%;*/
+	/*padding: auto 50px;*/
 }
 
