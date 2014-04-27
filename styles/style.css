@@ -45,13 +45,14 @@ nav {
 	padding-top: 5px;
 	z-index: 99;
 	width: 100%;
+	height: 50px;
 	background-color: #e74c3c;
-	box-shadow: 0 45px 5px black;
+	box-shadow: 0 2px 8px black;
 }
 
 ul.nav, ul.sub-nav {
 	margin: 0;
-	padding: 0;
+	padding: 0 10%; /*align first button with content*/
 	float: left;
 	list-style-type: none; 
 	width: 100%;
@@ -60,7 +61,10 @@ ul.nav, ul.sub-nav {
 
 ul.nav {
 	position: fixed;
-	width: 100%;
+}
+
+ul.sub-nav {
+	padding: 0; /*fix alignment for subnav*/
 }
 
 ul.nav li {
@@ -77,8 +81,11 @@ ul.nav li a {
 	letter-spacing: 1px;	
 }
 
-ul.nav li:first-child a {
-} 
+ul.nav li:first-child a:hover {
+	background-color: white;
+	color: #e74c3c;
+}
+
 
 ul.nav li ul {
 	display: none;
@@ -107,6 +114,11 @@ ul.nav li ul li:nth-child(2) a {
 	width: 100%;
 }
 
+ul.nav li ul li:first-child a:hover {
+	background-color: #e74c3c;
+	color: black;
+}
+
 nav a {
 	color: white;
 }
@@ -130,19 +142,21 @@ header {
 	width: 100%;
 	background-image: url(../media/stronglifts.jpg);
 	background-size: cover;
-	background-position: left;
+	background-position: top;
 	position: relative;
 }
 
 header h1 {
 	text-align: center;
+	color: black;
+	font-size: 40px;
 	padding: 5%;
 	margin: 0 15%;
 	position: absolute;
-	top: 25%;
+	top: 33%;
 	left: 15%;
 	background-color: rgba(255,255,255,0.5);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 	box-shadow:  0 5px 5px rgba(0,0,0,0.7);
 	
 }
@@ -286,17 +300,11 @@ footer {
 	clear: both;
 }
 
-.arnoldwrapper {
-/*	width: 100%;*/
-}
-
 .arnold {
 	background: black;
 	font-size: 32px;
 	font-family: 'Montserrat', 'sans-serif';
-	
 	color: white;
-
 	padding: 50px 10%;
 
 }
