@@ -4,6 +4,14 @@
     box-sizing: border-box; 
 }
 
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -19,6 +27,11 @@ p {
 a {
 	text-decoration: none;
 	color: #e74c3c;
+}
+
+@font-face { 
+	font-family: 'CAC_Champagne';
+	src: url('../fonts/cac_champagne.ttf') format('truetype');
 }
 
 /***************************************************
@@ -88,7 +101,7 @@ ul.nav li ul li a {
 	width: auto;
 }
 
-/*ensure Squat & deadlift span entire length*/
+/*ensure Squat & Deadlift span entire width*/
 ul.nav li ul li:first-child a,
 ul.nav li ul li:nth-child(2) a {
 	width: 100%;
@@ -117,7 +130,7 @@ header {
 	width: 100%;
 	background-image: url(../media/stronglifts.jpg);
 	background-size: cover;
-	background-position: top;
+	background-position: left;
 	position: relative;
 }
 
@@ -149,6 +162,87 @@ header h1 {
 	/*border: 1px solid black;*/
 }
 
+.content th {
+	text-decoration: underline;
+}
+
+.content td {
+	text-align: center;
+	padding: 5px 10px;
+}
+
+/***************************************************
+***********       TABS        **********************
+****************************************************/
+
+#tabs_wrapper {
+    /*width: 422px;*/
+}
+#tabs_container {
+	/*BORDER ON THE TOP PART OF TABS*/
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+#tabs {
+    list-style: none;
+    padding: 5px 0 4px 0;
+    margin: 0 0 0 10px;
+    font: 0.75em arial;
+}
+#tabs li {
+    display: inline;
+}
+#tabs li a {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #eeeeee;
+    border-bottom: none;
+    outline: none;
+            border-radius: 5px 5px 0 0;
+       -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+#tabs li a:hover {
+    background-color: #dddddd;
+    padding: 10px 12px;
+}
+#tabs li.active a {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    /*padding: 4px 6px 5px 6px;*/
+    padding: 10px;
+    border-bottom: none;
+}
+#tabs li.active a:hover {
+    background-color: #eeeeee;
+    /*padding: 4px 6px 5px 6px;*/
+    padding: 10px;
+    border-bottom: none;
+}
+ 
+#tabs li a.icon_accept {
+    background-image: url(accept.png);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+#tabs li a.icon_accept:hover {
+    padding-left: 24px;
+}
+ 
+#tabs_content_container {
+    /*border: 1px solid #ccc;*/ 
+    border-top: none;
+    padding: 10px;
+    width: 100%;
+}
+.tab_content {
+    display: none;
+}
+
 /***************************************************
 ************     SIDEBAR      **********************
 ****************************************************/
@@ -158,6 +252,10 @@ header h1 {
 	width: 40%;
 	/*border: 1px solid black;*/
 	padding: 25px;
+}
+
+.sidebar li {
+	padding: 2px;
 }
 
 .mustread,
@@ -181,7 +279,29 @@ header h1 {
 
 
 footer {
+	background: #e74c3c;
+	padding-bottom: 7px;
+	width: 100%;
+	clear: both;
+}
+
+.arnoldwrapper {
+/*	width: 100%;*/
+}
+
+.arnold {
+	background: black;
+	font-size: 32px;
+	/*font-family: 'Sail', 'cursive';*/
+	font-family: 'CAC_Champagne';
+	color: white;
+
+	padding: 50px 10%;
 
 }
 
+.arnold cite {
+	color: #e74c3c;
+	/*font-family: 'Pacifico', 'cursive';*/
+}
 
