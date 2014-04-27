@@ -143,6 +143,7 @@ header h1 {
 	left: 15%;
 	background-color: rgba(255,255,255,0.5);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	box-shadow:  0 5px 5px rgba(0,0,0,0.7);
 	
 }
 
@@ -292,8 +293,8 @@ footer {
 .arnold {
 	background: black;
 	font-size: 32px;
-	/*font-family: 'Sail', 'cursive';*/
-	font-family: 'CAC_Champagne';
+	font-family: 'Montserrat', 'sans-serif';
+	
 	color: white;
 
 	padding: 50px 10%;
@@ -302,6 +303,7 @@ footer {
 
 .arnold cite {
 	color: #e74c3c;
+	font-family: 'CAC_Champagne';
 	/*font-family: 'Pacifico', 'cursive';*/
 }
 
