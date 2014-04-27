@@ -1,0 +1,59 @@
+header {
+	background-image: url(../media/about-stronglifts.jpg);	
+}
+
+ul.nav li:first-child a {
+	color: white;
+}
+
+ul.nav li:first-child a:hover {
+	color: black;
+	background-color: #e74c3c;
+}
+
+ul.nav li:nth-child(5) a {
+	color: #e74c3c;
+}
+
+ul.nav li:nth-child(5) a:hover {
+	background-color: white;
+}
+
+
+ul.sub-nav  li:nth-child(5) a {
+	color: white;
+}
+
+ul.sub-nav li:nth-child(5) a:hover {
+	color: black;
+	background-color: #e74c3c;
+}
+
+.wrapper-other {
+	min-height: 550px;
+}
+
+.content-other {
+	padding-top: 100px;
+	padding-bottom: 250px;
+}
+
+.content-other ul {
+	list-style: none;
+	padding-left: 0;
+}
+.left {
+	float: left;
+}
+
+.left ul ~ h2 {
+	padding-top: 70px;
+}
+
+.right {
+	float: right;
+}
+
+.arnold {
+	text-align: center;
+}

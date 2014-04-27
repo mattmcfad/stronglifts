@@ -98,6 +98,10 @@ ul.nav li a {
 	letter-spacing: 1px;	
 }
 
+ul.nav li:first-child a {
+	color: #e74c3c;
+}
+
 ul.nav li:first-child a:hover {
 	background-color: white;
 	color: #e74c3c;
@@ -134,6 +138,10 @@ ul.nav li ul li:nth-child(2) a {
 ul.nav li ul li:first-child a:hover {
 	background-color: #e74c3c;
 	color: black;
+}
+
+ul.nav li ul li:first-child a {
+	color: white;
 }
 
 nav a {
@@ -315,12 +323,14 @@ footer {
 	font-family: 'Montserrat', 'sans-serif';
 	color: white;
 	padding: 50px 10%;
+	text-align: center;
 
 }
 
-.arnold cite {
+cite {
 	color: #e74c3c;
 	font-family: 'CAC_Champagne';
+	text-align: right;
 	/*font-family: 'Pacifico', 'cursive';*/
 }
 

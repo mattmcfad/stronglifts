@@ -1,4 +1,33 @@
-
 header {
 	background-image: url(../media/squat.jpg);	
+	background-position: bottom;
+}
+
+ul.nav li:first-child a {
+	color: white;
+}
+
+ul.nav li:first-child a:hover {
+	color: black;
+	background-color: #e74c3c;
+}
+
+ul.nav li:nth-child(2) a {
+	color: #e74c3c;
+}
+
+ul.nav li:nth-child(2) a:hover {
+	background-color: white;
+}
+
+/* I feel like these sub nav corrections below to the above selectors
+   could be avoided with some sort of advanced selector(s)? */
+
+ul.sub-nav  li:nth-child(n+1) a {
+	color: white;
+}
+
+ul.sub-nav li:nth-child(n+1) a:hover {
+	color: black;
+	background-color: #e74c3c;
 }

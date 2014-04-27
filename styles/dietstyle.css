@@ -1,0 +1,30 @@
+header {
+	background-image: url(../media/bacon-1200-600.jpg);	
+}
+
+ul.nav li:first-child a {
+	color: white;
+}
+
+ul.nav li:first-child a:hover {
+	color: black;
+	background-color: #e74c3c;
+}
+
+ul.nav li:nth-child(3) a {
+	color: #e74c3c;
+}
+
+ul.nav li:nth-child(3) a:hover {
+	background-color: white;
+}
+
+
+ul.sub-nav  li:nth-child(3) a {
+	color: white;
+}
+
+ul.sub-nav li:nth-child(3) a:hover {
+	color: black;
+	background-color: #e74c3c;
+}
