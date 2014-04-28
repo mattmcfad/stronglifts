@@ -103,8 +103,8 @@ ul.nav li:first-child a {
 }
 
 ul.nav li:first-child a:hover {
-	background-color: white;
-	color: #e74c3c;
+	/*background-color: white;*/
+	color: black;
 }
 
 
@@ -153,8 +153,6 @@ nav a:hover {
 	background-color: #e74c3c;
 }
 
-
-
 span.arrow {
 	font-size:10px;
 }
@@ -168,7 +166,6 @@ header {
 	background-image: url(../media/stronglifts.jpg);
 	background-size: cover;
 	background-position: top;
-	/*position: relative;*/
 	padding-top: 17%;
 }
 
@@ -179,8 +176,6 @@ header {
 	float: left;
 	width: 60%;
 	padding: 25px 0 25px 10%;
-	/*border: 1px solid black;*/
-	
 }
 
 .content li,
@@ -192,7 +187,6 @@ header {
 .wrapper {
 	padding-top: 55px;
 	max-width: 555px;
-	/*border: 1px solid black;*/
 }
 
 th {
@@ -245,13 +239,11 @@ td {
 #tabs li.active a {
     border-bottom: 1px solid #fff;
     background-color: #fff;
-    /*padding: 4px 6px 5px 6px;*/
     padding: 10px;
     border-bottom: none;
 }
 #tabs li.active a:hover {
     background-color: #eeeeee;
-    /*padding: 4px 6px 5px 6px;*/
     padding: 10px;
     border-bottom: none;
 }
@@ -267,7 +259,6 @@ td {
 }
  
 #tabs_content_container {
-    /*border: 1px solid #ccc;*/ 
     border-top: none;
     padding: 10px;
     width: 100%;
@@ -283,7 +274,6 @@ td {
 .sidebar {
 	float: right;
 	width: 40%;
-	/*border: 1px solid black;*/
 	padding: 25px;
 }
 
@@ -298,7 +288,6 @@ td {
 .mustread,
 .tools,
 .tweets {
-	/*border: 1px solid black;*/
 	margin: 50px 0 50px 0;
 }
 
@@ -306,7 +295,8 @@ td {
 	
 }
 
-.tweets{
+.tweets {
+
 }
 
 
@@ -335,7 +325,7 @@ footer {
 cite {
 	color: #e74c3c;
 	font-family: 'CAC_Champagne';
-	text-align: right;
+	text-align: right; /*THIS WONT ALIGN **** :@:@:@;*/
 	/*font-family: 'Pacifico', 'cursive';*/
 }
 

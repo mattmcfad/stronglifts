@@ -16,7 +16,8 @@ ul.nav li:nth-child(4) a {
 }
 
 ul.nav li:nth-child(4) a:hover {
-	background-color: white;
+	/*background-color: white;*/
+	color: black;
 }
 
 

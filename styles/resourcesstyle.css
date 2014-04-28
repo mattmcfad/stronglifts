@@ -16,7 +16,8 @@ ul.nav li:nth-child(5) a {
 }
 
 ul.nav li:nth-child(5) a:hover {
-	background-color: white;
+	/*background-color: white;*/
+	color: black;
 }
 
 ul.sub-nav  li:nth-child(5) a {
@@ -35,7 +36,7 @@ ul.sub-nav li:nth-child(5) a:hover {
 .content-other {
 	padding-top: 40px;
 	padding-bottom: 250px;
-	margin: 0 10%;
+	margin: 0 1%;
 }
 
 .content-other ul {
