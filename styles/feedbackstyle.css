@@ -34,9 +34,9 @@ ul.sub-nav li:nth-child(6) a:hover {
 form {
 	padding-top: 50px;
 	width: 75%;
+	max-width: 500px;
 	display: block;
-	position: relative;
-	left: 12.5%;
+	margin: 0 auto;
 }
 
 form h2 {

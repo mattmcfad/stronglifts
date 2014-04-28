@@ -190,6 +190,7 @@ header {
 }
 
 .wrapper {
+	padding-top: 55px;
 	max-width: 555px;
 	/*border: 1px solid black;*/
 }
@@ -290,6 +291,10 @@ td {
 	padding: 2px;
 }
 
+.mustread {
+	padding-top: 53px;
+}
+
 .mustread,
 .tools,
 .tweets {
@@ -341,7 +346,7 @@ cite {
 
 .wrapper-other {
 	/*width: 60%;*/
-	padding: 0 20%;
+	padding: 40px 30%;
 }
 .content-other {
 	max-width: 555px;

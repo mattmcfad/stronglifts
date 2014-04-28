@@ -28,3 +28,7 @@ ul.sub-nav li:nth-child(3) a:hover {
 	color: black;
 	background-color: #e74c3c;
 }
+
+.hotfix {
+	padding-bottom: 50px;
+}
